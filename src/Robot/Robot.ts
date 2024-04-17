@@ -1,4 +1,4 @@
-import { Position, Roof } from './types';
+import { Command, Position, Roof } from './types';
 
 export class Robot {
   #roof: Roof;
@@ -16,7 +16,7 @@ export class Robot {
     this.#position = position;
   }
 
-  move = (cmd: string) => {
+  move = (cmd: Command) => {
     if (cmd === 'N') {
       if (this.#position.y < this.#roof.dimensionY) this.#position.y++;
     }
