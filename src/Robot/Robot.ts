@@ -15,4 +15,19 @@ export class Robot {
     this.#roof = roof;
     this.#position = position;
   }
+
+  move = (cmd: string) => {
+    if (cmd === 'N') {
+      if (this.#position.y < this.#roof.dimensionY) this.#position.y++;
+    }
+    if (cmd === 'E') {
+      if (this.#position.x < this.#roof.dimensionX) this.#position.x++;
+    }
+    if (cmd === 'S') {
+      if (this.#position.y > 0) this.#position.y--;
+    }
+    if (cmd === 'W') {
+      if (this.#position.x > 0) this.#position.x--;
+    }
+  };
 }
