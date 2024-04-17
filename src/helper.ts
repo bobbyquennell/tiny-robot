@@ -1,5 +1,4 @@
-import { Robot } from './Robot/Robot';
-import { Command } from './Robot/types';
+import { Command, Robot } from './Robot';
 
 export const isCommand = (input: string): input is Command => {
   return ['N', 'S', 'W', 'E'].includes(input);

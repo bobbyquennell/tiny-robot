@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { executeCmds } from './helper';
-import { Robot } from './Robot/Robot';
+import { Robot } from './Robot';
 
 const data = fs.readFileSync(path.resolve(__dirname, 'commands.txt'));
 
