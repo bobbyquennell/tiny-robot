@@ -1,6 +1,4 @@
-# Simple Typescript App
-
-a simple app to kickstart your ts project (backend)
+# Tiny Robot
 
 ## Prerequisites
 
@@ -14,7 +12,7 @@ a simple app to kickstart your ts project (backend)
 ---
 
 ```bash
-git clone git@github.com:bobbyquennell/simple-ts-app.git && cd simple-ts-app
+git clone https://github.com/bobbyquennell/tiny-robot.git && cd tiny-robot
 ```
 
 ### 2. bootstrap the project
@@ -32,7 +30,12 @@ git clone git@github.com:bobbyquennell/simple-ts-app.git && cd simple-ts-app
 ```bash
 npm run start-dev 
 ```
-
+you should see some results like this:
+```
+robot initial position: [0, 0]
+after commands: N E S W, robot stopped at: [0, 0]
+after commands: N E N E N E N E, robot stopped at: [4, 4]
+```
 ## Run tests
 
 ---
